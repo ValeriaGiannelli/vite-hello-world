@@ -1,11 +1,13 @@
 <script>
 // importo la componente che voglio
 import AppTitle from './components/AppTitle.vue';
+import AppHero from './components/AppHero.vue';
 
 // dico cosa deve prendere da quella componente
 export default{
   components: {
-    AppTitle
+    AppTitle,
+    AppHero,
   }
 }
 
@@ -13,7 +15,10 @@ export default{
 
 <template>
   <!-- inserisco la componente nel template-->
+  <AppHero/>
+
   <AppTitle/>
+
 </template>
 
 <style scoped>
